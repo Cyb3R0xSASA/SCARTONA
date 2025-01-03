@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="./product.css">
+    <title>Product Title</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="breadcrumb"></div>
+    <main class="fx-cb">
+        <div class="image-box">
+            <div class="productImage">
+                <img src="" alt="Image Title" id="current-image">
+            </div>
+            <div class="image-collection fx-cb">
+                <div id="image-1"><img src="/assets/Images/Image (2).png" alt="Image Title"></div>
+                <div id="image-2"><img src="/assets/Images/Image (3).png" alt="Image Title"></div>
+                <div id="image-3"><img src="/assets/Images/Image (4).png" alt="Image Title"></div>
+                <div id="image-4"><img src="/assets/Images/Image (5).png" alt="Image Title"></div>
+            </div>
+        </div>
+        <div class="details-box">
+            <div class="details">
+                <h1 id="productTitle"></h1>
+            <div class="rate">
+                <button type="button"><i class='bx bx-star'><i class="fa-solid fa-star"></i></i></button>
+                <button type="button"><i class='bx bx-star'><i class="fa-solid fa-star"></i></i></button>
+                <button type="button"><i class='bx bx-star'><i class="fa-solid fa-star"></i></i></button>
+                <button type="button"><i class='bx bx-star'><i class="fa-solid fa-star"></i></i></button>
+                <button type="button"><i class='bx bx-star'><i class="fa-solid fa-star"></i></i></button>
+            </div>
+            <h3 id="productPrice"></h3>
+            <h5 id="productDescription"></h5>
+            <div class="sizes">
+                <form id="size" class="flex">
+                    <h3>Size: </h3>
+                    <label for="small">
+                        <input type="radio" name="size" id="small" value="small">
+                        <span>S</span>
+                    </label>
+                    <label for="medium">
+                        <input type="radio" name="size" id="medium" value="medium">
+                        <span>M</span>
+                    </label>
+                    <label for="large">
+                        <input type="radio" name="size" id="large" value="large">
+                        <span>L</span>
+                    </label>
+                    <label for="x-large">
+                        <input type="radio" name="size" id="x-large" value="x-large">
+                        <span>XL</span>
+                    </label>
+                    <label for="xx-large">
+                        <input type="radio" name="size" id="xx-large" value="xx-large">
+                        <span>XXL</span>
+                    </label>
+                </form>
+            </div>
+            <div class="colors">
+                <form id="color" class="flex">
+                    <h3>Color: </h3>
+                    <label for="red">
+                        <input type="radio" name="color" id="red" value="red">
+                        <p><span></span></p>
+                    </label>
+                    <label for="green">
+                        <input type="radio" name="color" id="green" value="green">
+                        <p><span></span></p>
+                    </label>
+                    <label for="blue">
+                        <input type="radio" name="color" id="blue" value="blue">
+                        <p><span></span></p>
+                    </label>
+                    <label for="yellow">
+                        <input type="radio" name="color" id="yellow" value="yellow">
+                        <p><span></span></p>
+                    </label>
+                    <label for="pink">
+                        <input type="radio" name="color" id="pink" value="pink">
+                        <p><span></span></p>
+                    </label>
+                </form>
+            </div>
+            <div class="quantity flex">
+                <label for="count"><h3>Quantity: </h3></label>
+                <input type="number" name="count" id="count">
+            </div>
+            <div class="submit">
+                <button type="button" id="add">Add to cart</button>
+                <button type="button" id="buy">Buy Now</button>
+            </div>
+            </div>
+        </div>
+    </main>
+    <div id="pop-up" class="pop-up hidden"></div>
+    <div id="footer"></div>
+    <script src="/js/components.js"></script>
+    <script src="./product.js"></script>
+</body>
+</html>

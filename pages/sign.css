@@ -1,0 +1,148 @@
+.sign-box form .name {
+    gap: 20px;
+}
+
+.sign-box {
+    width: 648px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 30px 0 #2723431F ;
+    padding: 32px;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.sign-box h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--font-color);
+}
+
+.sign-box form {
+    width: 100%;
+}
+
+.sign-box input,
+#forgetMail {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    background: var(--second-color);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 45px 8px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-3);
+}
+
+.sign-box input:focus,
+#forgetMail:focus {
+    color: #000;
+}
+
+/* .sign-box #mailError,
+.sign-box #passwordError */
+.error {
+    color: red;
+    margin: -10px 0 10px 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+input[aria-invalid="false"] {
+    transition: ease 0.5s;
+    border-color: transparent;
+    box-shadow: 0 0 5px transparent;
+}
+input[aria-invalid="true"] {
+    transition: ease 0.5s;
+    box-shadow: 0 0 10px #ff0000cc;
+    border: 1.3px solid #ff0000cc;
+}
+
+.sign-box .password {
+    height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sign-box .password button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    font-size: 22px;
+}
+
+.sign-box .password button {
+    right: 20px;
+}
+
+.sign-box .check-password {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.sign-box .check {
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.sign-box .check-password input {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+}
+
+.sign-box .check>label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--links-color);
+}
+
+.sign-box .check-password a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--active-color);
+}
+
+.sign-box .sing-btn {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sign-box .sing-btn:hover {
+    transform: scale(1);
+}
+
+.sign-box>p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.sign-box>p>a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+    .sign-box {
+        width: 90%;
+    }
+
+    .sign-box form .name {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+}

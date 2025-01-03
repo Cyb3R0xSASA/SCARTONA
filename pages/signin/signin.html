@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="../sign.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/boxicons.min.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="breadcrumb"></div>
+    <section class="sign-box flex">
+        <h2>Sign In</h2>
+        <form autocomplete="off" method="post" id="signForm">
+            <input type="text" name="email" placeholder="Email">
+            <div class="password">
+                <input type="password" name="password" placeholder="Password">
+                <button type="button" id="showBtn"><i class='bx bxs-lock-alt' ></i></button>
+            </div>
+            <p class="error"></p>
+            <div class="check-password flex">
+                <div class="check flex">
+                    <input type="checkbox" name="remember">
+                    <label for="rememberme">Remember Me</label>
+                </div>
+                <a id="forgetPassword">Forget Password?</a>
+            </div>
+            <button type="submit" id="signBtn" class="sing-btn">
+                Sign In
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+        </form>
+        <p>Don't have account? <a href="../signup/signup.html">Sign Up</a></p>
+    </section>
+    <div id="overlay"></div>
+    <div id="popup">
+        
+    </div>
+    <div id="footer"></div>
+    <script src="/js/components.js"></script>
+    <script src="./signin.js"></script>
+</body>
+</html>

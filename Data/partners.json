@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "CIB BANK",
+        "href": "https://www.cibeg.com/",
+        "image-src": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.UDxcP4bXKy5adsetCblangHaEH%26pid%3DApi&f=1&ipt=9a2b5db21a4385b3cdac5962a9c3be73f057d95b9c38836cbec996a8117f8f54&ipo=images"
+    },
+    {
+        "id": 2,
+        "title": "ZAPIER",
+        "href": "https://zapier.com/",
+        "image-src": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feasydigitaldownloads.com%2Fwp-content%2Fuploads%2Fedd%2F2015%2F07%2Fzapier-product-image.png&f=1&nofb=1&ipt=2b1b0df728a7c97334891568eff1975f9b97b7b98a2e660b8cee3f0b26ac5cb3&ipo=images"
+    },
+    {
+        "id": 3,
+        "title": "PIPEDRIVE",
+        "href": "https://www.pipedrive.com/",
+        "image-src": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.B1zR5aOWJknHJQNzXpBdRwHaCB%26pid%3DApi%26h%3D160&f=1&ipt=8424db7c161f4c7fcb9b0b4ef8aba8396bb29b1d3c30018e4c2879a33586ce1a&ipo=images"
+    },
+    {
+        "id": 4,
+        "title": "PandaDoc",
+        "href": "https://www.pandadoc.com/",
+        "image-src": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.pareto.io%2Fwp-content%2Fuploads%2F2021%2F10%2Fpandadoc.png&f=1&nofb=1&ipt=c85d3a5f1381f86b6c3579ec7e50cdb658bcf83b7516f50727d704ab64294432&ipo=images"
+    },
+    {
+        "id": 5,
+        "title": "MOZ",
+        "href": "https://moz.com/",
+        "image-src": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5xEFzE4tZKYn9KJcyrehOgHaCK%26pid%3DApi&f=1&ipt=f8b35dc89b35945cf132fdb7a76dd7af428a9cfdf68474526fb856d1af44f937&ipo=images"
+    },
+    {
+        "id": 6,
+        "title": "AMAZON",
+        "href": "https://www.amazon.com/",
+        "image-src": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.YdkQGmhB9c2Sr84FeDD9egHaEK%26pid%3DApi&f=1&ipt=e8080c736eac220c5432ecd480d7cc35425955d708a052c247583d9917c4b692&ipo=images"
+    }
+]

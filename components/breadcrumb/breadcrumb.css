@@ -1,0 +1,31 @@
+.Breadcrumb {
+    height: 130px;
+    width: 90%;
+    margin: 180px auto 60px auto;
+    background: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.Breadcrumb p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--links-color);
+}
+
+.Breadcrumb p>span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #272343;
+}
+
+.Breadcrumb h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--font-color);
+}

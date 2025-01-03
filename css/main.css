@@ -1,0 +1,250 @@
+/* ############# */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+button,
+a {
+    all: unset;
+}
+
+button {
+    box-sizing: border-box;
+}
+
+button:hover {
+    /* transform: scale(0.9); */
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.fx-cb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fx-between {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-start {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.logo {
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #272343;
+}
+
+:root {
+    --main-color: #029FAE;
+    --second-color: #F0F2F3;
+    --color-3: #9A9CAA;
+    --button-color: #D1D1D6;
+    --active-color: #00b7c7;
+    --links-color: #636270;
+    --font-color: #272343;
+    --font-active: #2e2273;
+    --new-color: #01AD5A;
+    --sales-color: #F5813F;
+}
+/* ############ */
+.container {
+    padding-inline: 15px;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: none;
+    z-index: 1000;
+}
+#popup h3 {
+    margin: 0 0 10px 0;
+    color: #e74c3c;
+}
+#popup p {
+    margin: 0 0 20px 0;
+}
+#popup .close-btn,
+#popup .confirm-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#popup .close-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#popup .confirm-btn {
+    background: greenyellow;
+    color: #2E236C;
+}
+
+
+#popup .confirm-btn:hover {
+    background: rgb(151, 255, 47);
+    cursor: pointer;
+}
+
+#popup .close-btn:hover {
+    background-color: #c0392b;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+/* Notification */
+@keyframes downDrop {
+    0% {
+        top: 5px;
+        opacity: 1;
+    }
+    80% {
+        top: 200px;
+        opacity: 0.8;
+    }
+    100% {
+        top: 200px;
+        opacity: 0;
+    }
+}
+.notification {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 16px 16px;
+    animation: downDrop 3s forwards ease;
+    text-align: center;
+    min-width: 250px;
+    box-sizing: border-box;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    z-index: 10000;
+    font-weight: 600;
+}
+
+/* Loader */
+.loader-parent {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    background: #353535;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotationBack 1s ease-in-out infinite reverse;
+}
+
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #2e2e2e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
