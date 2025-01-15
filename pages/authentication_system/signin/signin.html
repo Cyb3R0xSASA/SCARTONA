@@ -1,0 +1,29 @@
+<h2 class="text-3xl font-semibold text-primary">Sign In</h2>
+<form class="w-full" autocomplete="off" method="post" id="signForm">
+    <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="text" name="email" placeholder="Email">
+    <div class="password">
+        <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="password" name="password" placeholder="Password">
+        <button type="button" id="showBtn"><i class='bx bxs-lock-alt' ></i></button>
+    </div>
+    <p class="error text-red font-semibold text-base"></p>
+    <div class="check-password flex">
+        <div class="check flex">
+            <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="checkbox" name="remember">
+            <label for="rememberme">Remember Me</label>
+        </div>
+        <a href="./index.html?id=reset">Forget Password?</a>
+    </div>
+    <button type="submit" id="signBtn" class="sing-btn">
+        Sign In
+        <i class="fa-solid fa-arrow-right-long"></i>
+    </button>
+</form>
+<div class="social">
+    <p>OR</p>
+    <div class="social-btns fx-between">
+        <button type="button"><img src="/assets/Images/google.png"></button>
+        <button type="button"><img src="/assets/Images/facebook.png"></button>
+        <button type="button"><img src="/assets/Images/twitter.png"></button>
+    </div>
+</div>
+<p>Don't have account? <a href="./index.html?id=signup">Sign Up</a></p>

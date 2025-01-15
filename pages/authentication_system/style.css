@@ -1,0 +1,170 @@
+.sign-box {
+    width: 648px;
+    box-shadow: 0 0 30px 0 #2723431F ;
+}
+
+.sign-box input {
+    height: 50px;
+    padding: 8px 45px 8px 20px;
+}
+
+.sign-box input:focus {
+    color: #000;
+}
+
+.error {
+    margin: -10px 0 10px 10px;
+}
+
+input[aria-invalid="false"] {
+    transition: ease 0.5s;
+    border-color: transparent;
+    box-shadow: 0 0 5px transparent;
+}
+input[aria-invalid="true"] {
+    transition: ease 0.5s;
+    box-shadow: 0 0 10px #ff0000cc;
+    border: 1.3px solid #ff0000cc;
+}
+
+.sign-box .password {
+    height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sign-box .password button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    font-size: 22px;
+}
+
+.sign-box .password button {
+    right: 20px;
+}
+
+.sign-box .check-password {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.sign-box .check {
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.sign-box .check-password input {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+}
+
+.sign-box .check>label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--links-color);
+}
+
+.sign-box .check-password a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--active-color);
+}
+
+.sign-box .sing-btn {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sign-box .sing-btn:hover {
+    transform: scale(1);
+}
+
+.sign-box>p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.sign-box>p>a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.sign-box .social {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.sign-box .social p {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.sign-box .social p::before,
+.sign-box .social p::after {
+    position: absolute;
+    bottom: 50%;
+    content: '';
+    width: 47%;
+    height: 1px;
+    background: #000;
+}
+
+.sign-box .social p::before {
+    left: 0;
+}
+
+.sign-box .social p::after {
+    right: 0;
+}
+
+.sign-box .social .social-btns button {
+    margin: 10px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sign-box .social .social-btns button img {
+    width: 22px;
+}
+
+.sign-box .social .social-btns button:nth-child(2) img{
+    width: 24px;
+}
+
+@media (max-width: 767px) {
+    .sign-box {
+        width: 90%;
+    }
+
+    .sign-box form .name {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .sign-box .social p::before,
+    .sign-box .social p::after {
+        width: 46%;
+    }
+}
+
+@media (max-width: 468px) {
+    .sign-box .social p::before,
+    .sign-box .social p::after {
+        width: 44%;
+    }
+}

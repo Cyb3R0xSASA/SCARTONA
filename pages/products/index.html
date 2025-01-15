@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sonitera.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/boxicons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Products</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="d-flex gap-8">
+        <nav class="mt-44 w-72 bg-secondary">
+            <div class="p-5 divider-b-1 border-color-1 flex-center-between">
+                <i class="fa-solid fa-sliders cursor-pointer"></i>
+                <span class="text-primary text-base font-medium">Filters</span>
+            </div>
+            <div class="p-5 divider-b-1 border-color-1">
+                <div class="flex-center-between">
+                    <h3 class="text-primary text-lg font-semibold mb-2-5">Categories</h3>
+                    <i class="fa-solid fa-chevron-up cursor-pointer"></i>
+                </div>
+                <div id="categories">
+                    <div class="d-flex align-start flex-column gap-3 max-h-60 overflow-y-auto scrollable-container">
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-1" class="cursor-pointer">
+                            <label for="cat-1" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-2" class="cursor-pointer">
+                            <label for="cat-2" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-3" class="cursor-pointer">
+                            <label for="cat-3" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-4" class="cursor-pointer">
+                            <label for="cat-4" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-5" class="cursor-pointer">
+                            <label for="cat-5" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-3" class="cursor-pointer">
+                            <label for="cat-3" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-4" class="cursor-pointer">
+                            <label for="cat-4" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-5" class="cursor-pointer">
+                            <label for="cat-5" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 divider-b-1 border-color-1">
+                <div class="flex-center-between">
+                    <h3 class="text-primary text-lg font-semibold mb-2-5">Price</h3>
+                    <i class="fa-solid fa-chevron-up cursor-pointer"></i>
+                </div>
+                <div id="price">
+                    <div class="w-full h-1 bg-secondary relative mb-5" id="slider">
+                        <span class="d-block w-3-5 h-3-5 rounded-half bg-primary absolute top-half left index-1 cursor-pointer"></span>
+                        <span class="d-block h-full bg-black absolute w-full index-0"></span>
+                        <span class="d-block w-3-5 h-3-5 rounded-half bg-primary absolute top-half right index-1 cursor-pointer"></span>
+                    </div>
+                    <div class="w-full d-flex align-center justify-center gap-3" id="actualPrice">
+                        <span class="d-block border-width-2 border-solid border-color-1 py-1 px-2-5 rounded-lg">$100</span>
+                        <span class="d-block border-width-2 border-solid border-color-1 py-1 px-2-5 rounded-lg">$5000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 divider-b-1 border-color-1">
+                <div class="flex-center-between">
+                    <h3 class="text-primary text-lg font-semibold mb-2-5">Colors</h3>
+                    <i class="fa-solid fa-chevron-up cursor-pointer"></i>
+                </div>
+                <div id="colors">
+                    <div class="d-flex align-center gap-3 flex-wrap">
+                        <div class="d-flex align-center flex-column cursor-pointer">
+                            <input type="checkbox" name="color" id="col-1" class="d-none">
+                            <label for="col-1" class="d-block w-6 h-6 bg-primary rounded-lg cursor-pointer"></label>
+                            <span class="text-xs font-medium">Green</span>
+                        </div>
+                        <div class="d-flex align-center flex-column cursor-pointer">
+                            <input type="checkbox" name="color" id="col-1" class="d-none">
+                            <label for="col-1" class="d-block w-6 h-6 bg-primary rounded-lg cursor-pointer"></label>
+                            <span class="text-xs font-medium">Green</span>
+                        </div>
+                        <div class="d-flex align-center flex-column cursor-pointer">
+                            <input type="checkbox" name="color" id="col-1" class="d-none">
+                            <label for="col-1" class="d-block w-6 h-6 bg-primary rounded-lg cursor-pointer"></label>
+                            <span class="text-xs font-medium">Green</span>
+                        </div>
+                        <div class="d-flex align-center flex-column cursor-pointer">
+                            <input type="checkbox" name="color" id="col-1" class="d-none">
+                            <label for="col-1" class="d-block w-6 h-6 bg-primary rounded-lg cursor-pointer"></label>
+                            <span class="text-xs font-medium">Green</span>
+                        </div>
+                        <div class="d-flex align-center flex-column cursor-pointer">
+                            <input type="checkbox" name="color" id="col-1" class="d-none">
+                            <label for="col-1" class="d-block w-6 h-6 bg-primary rounded-lg cursor-pointer"></label>
+                            <span class="text-xs font-medium">Green</span>
+                        </div>
+                        <div class="d-flex align-center flex-column cursor-pointer">
+                            <input type="checkbox" name="color" id="col-1" class="d-none">
+                            <label for="col-1" class="d-block w-6 h-6 bg-primary rounded-lg cursor-pointer"></label>
+                            <span class="text-xs font-medium">Green</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 divider-b-1 border-color-1">
+                <div class="flex-center-between">
+                    <h3 class="text-primary text-lg font-semibold mb-2-5">Sizes</h3>
+                    <i class="fa-solid fa-chevron-up cursor-pointer"></i>
+                </div>
+                <div id="sizes">
+                    <div class="d-flex align-center gap-3 flex-wrap">
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="sizes" id="siz-1" class="d-none">
+                            <label for="siz-1" class="text-lg font-medium d-block border-width-2 border-solid border-color-1 rounded-lg w-11 text-center cursor-pointer">S</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5">
+                <div class="flex-center-between">
+                    <h3 class="text-primary text-lg font-semibold mb-2-5">Brands</h3>
+                    <i class="fa-solid fa-chevron-up cursor-pointer"></i>
+                </div>
+                <div id="brands">
+                    <div class="d-flex align-start flex-column gap-3 max-h-60 overflow-y-auto scrollable-container">
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-1" class="cursor-pointer">
+                            <label for="cat-1" class="text-primary text-base font-semibold cursor-pointer">Adidas</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-2" class="cursor-pointer">
+                            <label for="cat-2" class="text-primary text-base font-semibold cursor-pointer">Puma</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-3" class="cursor-pointer">
+                            <label for="cat-3" class="text-primary text-base font-semibold cursor-pointer">Golden Eagle</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-4" class="cursor-pointer">
+                            <label for="cat-4" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-5" class="cursor-pointer">
+                            <label for="cat-5" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-3" class="cursor-pointer">
+                            <label for="cat-3" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-4" class="cursor-pointer">
+                            <label for="cat-4" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                        <div class="d-flex align-center gap-3 custom-checkbox">
+                            <input type="checkbox" name="cat" id="cat-5" class="cursor-pointer">
+                            <label for="cat-5" class="text-primary text-base font-semibold cursor-pointer">Mens</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="bg-secondary mt-44">
+            <div class="p-5 divider-b-1 border-color-1 d-flex align-center gap-3">
+                <span class="text-primary text-lg font-medium d-block no-wrap">Filters Apply: </span>
+                <div class="d-flex align-center gap-3 overflow-x-auto scrollable-none">
+                    <span class="text-primary text-base font-medium border-width-2 border-solid border-color-1 py-1 px-2-5 rounded-lg d-flex align-center gap-2">Adidas <i class="fa-solid fa-xmark cursor-pointer"></i></span>
+                    <span class="text-primary text-base font-medium border-width-2 border-solid border-color-1 py-1 px-2-5 rounded-lg d-flex align-center gap-2">Adidas <i class="fa-solid fa-xmark cursor-pointer"></i></span>
+                    <span class="text-primary text-base font-medium border-width-2 border-solid border-color-1 py-1 px-2-5 rounded-lg d-flex align-center gap-2">Adidas <i class="fa-solid fa-xmark cursor-pointer"></i></span>
+                    <span class="text-primary text-base font-medium border-width-2 border-solid border-color-1 py-1 px-2-5 rounded-lg d-flex align-center gap-2">Adidas <i class="fa-solid fa-xmark cursor-pointer"></i></span>
+                    <span class="text-primary text-base font-medium border-width-2 border-solid border-color-1 py-1 px-2-5 rounded-lg d-flex align-center gap-2">Adidas <i class="fa-solid fa-xmark cursor-pointer"></i></span>
+                </div>
+            </div>
+            <div class="p-5 flex-center-between">
+                <div>
+                    <span class="text-primary text-lg font-semibold d-block no-wrap"><span class="mr-2-5 text-secondary">46</span>Result</span>
+                </div>
+                <div class="d-flex align-center gap-3 dropdown-container">
+                    <label for="order" class="text-primary text-lg font-semibold d-block no-wrap cursor-pointer">Order:</label>
+                    <select id="order" class="dropdown">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                    </select>
+                </div>
+            </div>
+            <div id="result-product">
+                <div class="gird-3 gap-8"></div>
+            </div>
+            <div class="d-flex justify-center align-center p-5">
+                <div class="d-flex align-center gap-8">
+                    <button id="previousPage">Previous</button>
+                    <div class="d-flex align-center gap-5">
+                        <button class="bg-main py-1 px-3 rounded-lg text-base text-semibold">1</button>
+                        <button class="bg-main py-1 px-3 rounded-lg text-base text-semibold">1</button>
+                        <button class="bg-main py-1 px-3 rounded-lg text-base text-semibold">1</button>
+                        <span class="text-3xl font-bold">...</span>
+                        <button class="bg-main py-1 px-3 rounded-lg text-base text-semibold">1</button>
+                        <button class="bg-main py-1 px-3 rounded-lg text-base text-semibold">1</button>
+                        <button class="bg-main py-1 px-3 rounded-lg text-base text-semibold">1</button>
+                    </div>
+                    <button id="nextPage">Next</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/components.js"></script>
+</body>
+</html>

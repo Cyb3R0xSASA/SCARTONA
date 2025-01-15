@@ -3,121 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/all.min.css">
-    <link rel="stylesheet" href="/css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/sonitera.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/boxicons.min.css">
     <title>SCARTONA</title>
 </head>
 <body>
     <div id="header"></div>
-    <section class="homepage">
-        <div class="top">
-            <button class="left-arrow ar flex">
+    <section class="homepage bg-secondary">
+        <div class="top relative p-28">
+            <button class="left-arrow ar flex bg-white w-12-5 h-12-5 rounded-half text-main absolute">
                 <i class="fa-solid fa-arrow-left"></i>
             </button>
             <div class="container fx-between">
-                <div class="left">
-                    <p>Welcome to SCARTONA</p>
-                    <h1>Best Furniture Collection For Your Interior.</h1>
-                    <button id="dealBtn">
+                <div class="left w-half">
+                    <p class="text-sm font-normal text-upper text-primary">Welcome to SCARTONA</p>
+                    <h1 class="text-6xl font-bold mb-2-5">Best Furniture Collection For Your Interior.</h1>
+                    <button class="bg-primary text-white text-base font-semibold rounded-lg" id="dealBtn">
                         Shop Now
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <i class="fa-solid fa-arrow-right-long text-sm ml-2-5"></i>
                     </button>
                 </div>
-                <div class="right">
-                    <div class="image-box flex">
-                        <img src="/assets/Images/Product Image.png">
-                        <div class="disconunt flex">
-                            <h3>53%</h3>
-                            <p>Disconunt</p>
+                <div class="right w-half d-flex">
+                    <div class="image-box flex relative">
+                        <img class="w-full" src="/assets/Images/Product Image.png">
+                        <div class="discount flex absolute rounded-half bg-secondary">
+                            <h3 class="text-3xl text-red">53%</h3>
+                            <p class="text-sm font-medium text-primary">Discount</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="right-arrow ar flex">
+            <button class="right-arrow ar flex bg-white w-12-5 h-12-5 rounded-half text-main absolute">
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
     </section>
     <div class="company-logo">
-        <div class="container fx-cb"></div>
+        <div class="container fx-cb flex-wrap gap-5 mb-0"></div>
     </div>
-    <div class="featured-products container">
-        <div class="section-title fx-cb">
-            <h2>Featured Products</h2>
-            <div class="arrows flex">
-                <button class="arrowBtn"><i class="fa-solid fa-arrow-left-long"></i></button>
-                <button class="arrowBtn"><i class="fa-solid fa-arrow-right-long"></i></button>
+    <div class="grid-4 w-full gap-8 mb-8">
+        <div class="flex-center-between gap-8 bg-secondary p-5 updown-animation-1">
+            <div class="w-half h-full d-flex align-start justify-center flex-column">
+                <h1 class="text-lg text font-semibold text-primary">Amazing</h1>
+                <h2>Ladies Boots</h2>
+                <a href="#" class="px-2-5 py-2-5 primary-btn text-primary rounded-lg mt-2-5 font-medium">Sale up to 20%</a>
+            </div>
+            <div class="w-half">
+                <img src="/assets/Images/Product Image.png" alt="" class="w-full">
             </div>
         </div>
-        <div class="products"></div>
+        <div class="flex-center-between gap-8 bg-secondary p-5 updown-animation-2">
+            <div class="w-half h-full d-flex align-start justify-center flex-column">
+                <h1 class="text-lg text font-semibold text-primary">Amazing</h1>
+                <h2>Ladies Boots</h2>
+                <a href="#" class="px-2-5 py-2-5 primary-btn text-primary rounded-lg mt-2-5 font-medium">Sale up to 20%</a>
+            </div>
+            <div class="w-half">
+                <img src="/assets/Images/Product Image.png" alt="" class="w-full">
+            </div>
+        </div>
+        <div class="flex-center-between gap-8 bg-secondary p-5 updown-animation-1">
+            <div class="w-half h-full d-flex align-start justify-center flex-column">
+                <h1 class="text-lg text font-semibold text-primary">Amazing</h1>
+                <h2>Ladies Boots</h2>
+                <a href="#" class="px-2-5 py-2-5 primary-btn text-primary rounded-lg mt-2-5 font-medium">Sale up to 20%</a>
+            </div>
+            <div class="w-half">
+                <img src="/assets/Images/Product Image.png" alt="" class="w-full">
+            </div>
+        </div>
     </div>
-    <div class="our-products container">
-        <h2>
+    <div class="featured-products container mb-14">
+        <div class="section-title fx-cb mb-8">
+            <h2 class="text-3xl font-semibold">Featured Products</h2>
+            <div class="arrows flex gap-2-5">
+                <button class="arrowBtn bg-secondary rounded-half h-11 w-11 text-center"><i class="fa-solid fa-arrow-left-long"></i></button>
+                <button class="arrowBtn bg-secondary rounded-half h-11 w-11 text-center"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </div>
+        <div class="products grid-3 gap-8 mt-8"></div>
+    </div>
+    <div class="our-products container my-14 text-primary text-center">
+        <h2 class="text-3xl font-semibold ">
             Our Products
         </h2>
-        <ul class="flex">
-            <li><a>all</a></li>
-            <li><a>newest</a></li>
-            <li><a>trending</a></li>
-            <li><a>best sellers</a></li>
-            <li><a>features</a></li>
+        <ul class="flex-center-center gap-4-5 my-5">
+            <li><a class="text-base font-medium text-upper text-secondary">all</a></li>
+            <li><a class="text-base font-medium text-upper text-secondary">newest</a></li>
+            <li><a class="text-base font-medium text-upper text-secondary">trending</a></li>
+            <li><a class="text-base font-medium text-upper text-secondary">best sellers</a></li>
+            <li><a class="text-base font-medium text-upper text-secondary">features</a></li>
         </ul>
-        <div class="products" id="all-products">
+        <div class="products grid-3 gap-8 mt-8" id="all-products">
         </div>
     </div>
     <div class="client-rate">
         <div class="container">
-            <div class="section-title fx-cb">
-                <h2>What client says about us</h2>
-                <div class="arrows flex">
-                    <button class="arrowBtn"><i class="fa-solid fa-arrow-left-long"></i></button>
-                    <button class="arrowBtn"><i class="fa-solid fa-arrow-right-long"></i></button>
+            <div class="section-title fx-cb mb-8">
+                <h2 class="text-3xl font-semibold">What client says about us</h2>
+                <div class="arrows flex gap-2-5">
+                    <button class="arrowBtn bg-secondary rounded-half h-11 w-11 text-center"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    <button class="arrowBtn bg-secondary rounded-half h-11 w-11 text-center"><i class="fa-solid fa-arrow-right-long"></i></button>
                 </div>
             </div>
-            <div class="comments">
-                <div class="card">
-                    <div class="top flex">
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
+            <div class="comments d-grid gap-5">
+                <div class="card bg-white rounded-xl p-5">
+                    <div class="top flex relative">
+                        <p class="text-xl font-normal text-secondary ml-5">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
                     </div>
                     <div class="bottom fx-cb">
-                        <div class="client-details flex">
+                        <div class="client-details flex gap-3">
                             <div class="image-box">
                                 <img src="./assets/Images/Image (8).png" alt="">
                             </div>
                             <div class="conten">
-                                <h5>Kristin Watson</h5>
-                                <p>Fashion Designer</p>
+                                <h5 class="text-xl font-medium text-primary">Kristin Watson</h5>
+                                <p class="text-base font-normal text-secondary">Fashion Designer</p>
                             </div>
                         </div>
-                        <i class="fa-solid fa-quote-right"></i>
+                        <i class="fa-solid fa-quote-right text-secondary"></i>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="top flex">
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
+                <div class="card bg-white rounded-xl p-5">
+                    <div class="top flex relative">
+                        <p class="text-xl font-normal text-secondary ml-5">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
                     </div>
                     <div class="bottom fx-cb">
-                        <div class="client-details flex">
+                        <div class="client-details flex gap-3">
                             <div class="image-box">
                                 <img src="./assets/Images/Image (9).png" alt="">
                             </div>
                             <div class="content">
-                                <h5>Esther Howard</h5>
-                                <p>Fashion Designer</p>
+                                <h5 class="text-xl font-medium text-primary">Esther Howard</h5>
+                                <p class="text-base font-normal text-secondary">Fashion Designer</p>
                             </div>
                         </div>
-                        <i class="fa-solid fa-quote-right"></i>
+                        <i class="fa-solid fa-quote-right text-secondary"></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="footer"></div>
-    <script type="module" src="/components/loaderUtils.js"></script>
-    <script type="module" src="/js/index.js"></script>
-    <script src="/js/components.js"></script>
+    <script type="module" src="./components/loaderUtils.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script src="./js/components.js"></script>
 </body>
 </html>

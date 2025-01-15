@@ -1,0 +1,1 @@
+const [account, cart, order, white, payments, password] = document.querySelectorAll('#navbar li');

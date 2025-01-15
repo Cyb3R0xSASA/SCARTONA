@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sonitera.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/boxicons.min.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container main d-flex gap-8 mt-56 mb-14 text-primary">
+        <nav class="bg-secondary w-72">
+            <div class="user d-flex align-center gap-3 mb-5 p-5">
+                <div class="p-2 w-12-5 h-12-5 rounded-half border-width-2 border-solid border-color-1 overflow-hidden">
+                    <img src="/assets/Images/Product Image.png" alt="User Photo" class="w-full object-content">
+                </div>
+                <div>
+                    <p class="text-xl font-normal">Hello</p>
+                    <h1 class="text-xl font-bold">Mohmed Mostafa</h1>
+                </div>
+            </div>
+            <section>
+                <ul id="navbar">
+                    <li class="active p-5 text-xl font-medium cursor-pointer divider-b-1 border-color-1"><i class="fa-regular fa-user text-xl mr-2-5"></i> My Account</li>
+                    <li class="p-5 text-xl font-medium cursor-pointer divider-b-1 border-color-1"><i class="fa-solid fa-cart-shopping text-xl mr-2-5"></i> My Cart</li>
+                    <li class="p-5 text-xl font-medium cursor-pointer divider-b-1 border-color-1"><i class="fa-solid fa-basket-shopping text-xl mr-2-5"></i> My Order</li>
+                    <li class="p-5 text-xl font-medium cursor-pointer divider-b-1 border-color-1"><i class="fa-regular fa-heart text-xl mr-2-5"></i> My White List</li>
+                    <li class="p-5 text-xl font-medium cursor-pointer divider-b-1 border-color-1"><i class="fa-regular fa-credit-card text-xl mr-2-5"></i> Payments</li>
+                    <li class="p-5 text-xl font-medium cursor-pointer"><i class="fa-solid fa-key"></i> Password</li>
+                </ul>
+            </section>
+        </nav>
+        <main class="bg-secondary">
+            <div class="p-5 divider-b-1 border-color-1">
+                <h2 class="font-medium">Favorite Products</h2>
+            </div>
+            <div class="p-5">
+                <div class="d-flex gap-2-5 mb-5">
+                    <div class="tab active">
+                        <span>All</span>
+                        <span class="count">283</span>
+                    </div>
+                    <div class="tab">
+                        <span>Available</span>
+                        <span class="count">268</span>
+                    </div>
+                    <div class="tab">
+                        <span>Disabled</span>
+                        <span class="count">15</span>
+                    </div>
+                </div>
+                <div class="products-search">
+                    <form class="fx-cb">
+                        <div class="search-bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" name="q" placeholder="Search Product">
+                        </div>
+                        <button type="button">Search</button>
+                    </form>
+                </div>
+                <div class="products-wrapper">
+                    <div class="product-card">
+                        <span class="disable">Disable</span>
+                        <img src="/assets/Images/Product Image.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h3>
+                        <p class="product-price">$25.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <span class="available">Available</span>
+                        <img src="/assets/Images/Product Image.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet</h3>
+                        <p class="product-price">$25.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <span class="disable">Disable</span>
+                        <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h3>
+                        <p class="product-price">$25.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <span class="available">Available</span>
+                        <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h3>
+                        <p class="product-price">$25.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="/assets/Images/Product Image.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h3>
+                        <p class="product-price">$25.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="/assets/Images/Product Image.png" alt="Product Image" class="product-image">
+                        <h3 class="product-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h3>
+                        <p class="product-price">$25.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/components.js"></script>
+</body>
+</html>

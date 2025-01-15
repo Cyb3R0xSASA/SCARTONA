@@ -1,0 +1,37 @@
+<h2 class="text-3xl font-semibold text-primary">Sign Up</h2>
+<form class="w-full" autocomplete="off" method="post" id="signbox">
+    <div class="d-flex align-center gap-5">
+        <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="text" name="fname" placeholder="First Name">
+        <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="text" name="lname" placeholder="Last Name">
+    </div>
+    <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="text" placeholder="Email" name="email">
+    <div class="password">
+        <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="password" name="password1" placeholder="Password">
+        <button type="button" id="showBtn1"><i class='bx bxs-lock-alt' ></i></button>
+    </div>
+    <p id="password1Error" class="error text-red font-semibold text-base"></p>
+    <div class="password">
+        <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="password" name="password2" placeholder="Confirm Password">
+        <button type="button" id="showBtn2"><i class='bx bxs-lock-alt'></i></button>
+    </div>
+    <p id="password2Error" class="error text-red font-semibold text-base"></p>
+    <div class="check-password flex">
+        <div class="check flex">
+            <input class="w-full mb-5 bg-secondary outline-none border-none text-base font-normal text-secondary-active rounded-lg" type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember Me</label>
+        </div>
+    </div>
+    <button type="submit" class="sing-btn">
+        Sign Up
+        <i class="fa-solid fa-arrow-right-long"></i>
+    </button>
+</form>
+<div class="social">
+    <p>OR</p>
+    <div class="social-btns fx-between">
+        <button type="button"><img src="/assets/Images/google.png"></button>
+        <button type="button"><img src="/assets/Images/facebook.png"></button>
+        <button type="button"><img src="/assets/Images/twitter.png"></button>
+    </div>
+</div>
+<p>Have account? <a href="./index.html?id=signin">Sign in</a></p>

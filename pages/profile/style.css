@@ -1,0 +1,533 @@
+.container > nav .active {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.container > main {
+    width: calc(100% - 300px);
+}
+/* ----------- */
+#changePhoto {
+    right: -10px;
+    bottom: 15px;
+}
+/* --------------- */
+
+.container main .order {
+    padding: 20px;
+}
+
+.container main .products-search {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container main .products-search form {
+    gap: 20px;
+}
+
+.container main .products-search div {
+    width: 100%;
+}
+
+.container main .products-search .search-bar {
+    position: relative;
+}
+
+.container main .products-search .search-bar i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container main .products-search .search-bar input {
+    padding-left: 40px;
+}
+
+.container main .products-search button {
+    background: var(--main-color);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.orders {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.orders table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.orders thead {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.orders thead th {
+    padding: 12px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.orders tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.orders tbody tr:hover {
+    background-color: var(--button-color);
+}
+
+.orders tbody td {
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.orders .image-box {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.orders .image-box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.orders .order-details {
+    display: inline-block;
+    vertical-align: top;
+    max-width: calc(100% - 80px);
+}
+
+.orders .order-details h5 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+}
+
+.orders .order-details p {
+    margin: 2px 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.orders .order-details p span {
+    font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+    .orders table{
+        width: calc(200px * 5);
+    }
+
+    .order .orders-wrapper {
+        overflow-x: auto;
+        width: 100%;
+        scrollbar-width: thin; 
+        scrollbar-color: var(--active-color)  #fff; 
+    }
+
+    .orders-wrapper::-webkit-scrollbar {
+        height: 12px;
+        background-color:  #fff;
+    }
+
+    .orders-wrapper::-webkit-scrollbar-thumb {
+        background-color: var(--active-color);
+        border-radius: 4px;
+    }
+
+    .orders-wrapper::-webkit-scrollbar-track {
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .orders table {
+        font-size: 12px;
+    }
+
+    .orders thead th,
+    .orders tbody td {
+        padding: 10px;
+    }
+
+    .orders .image-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .orders .order-details h5 {
+        font-size: 12px;
+    }
+
+    .orders .order-details p {
+        font-size: 10px;
+    }
+}
+
+/* -------------- */
+.tab {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+  /* Active tab style */
+.tab.active {
+    background-color: var(--main-color);
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+
+.tab .count {
+    background-color: #f1f1f1;
+    color: #555;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.tab:hover {
+    background-color: var(--active-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.tab span:first-child {
+    transition: all 0.3s ease;
+}
+
+.tab:hover span:first-child {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .tab {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .tab .count {
+        font-size: 10px;
+    }
+}
+
+.products-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 280px));
+    justify-content: center;
+    gap: 30px;
+} 
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.product-card .available,
+.product-card .disable {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.product-card .available {
+    background-color: #e6f9ed; 
+    color: #2d8659;
+}
+
+.product-card .disable {
+    background-color: #fff4e6;
+    color: #d17a22;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--color-3);
+}
+
+.add-to-cart-btn {
+    background-color: var(--font-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--font-active);
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+    .add-to-cart-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+/* -------- */
+.container main .header p,
+.container main .footer p {
+    color: #666;
+}
+
+.payment-methods {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.payment-methods .types {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-methods .types .type {
+    border: 2px solid #cac7c7;
+    border-radius: 8px;
+    padding: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.payment-methods .types .active, 
+.payment-methods .types .type:hover {
+    cursor: pointer;
+    border-color: var(--active-color);
+}
+
+.payment-methods .types .type input {
+    margin-right: 10px;
+}
+
+.payment-methods .types .type label {
+    cursor: pointer;
+}
+
+.payment-methods section form > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-methods section form > div div {
+    align-self: flex-start;
+}
+
+.payment-methods section form div label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.payment-methods section form div input {
+    margin-left: 0;
+}
+
+.payment-methods section form div input,
+.payment-methods section form div select {
+    width: 300px;
+}
+
+main section form button {
+    padding: 10px 20px;
+    background: var(--active-color);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* ---------- */
+
+.change-password {
+    margin-block: 20px;
+}
+
+.container main .change-password form div {
+    margin-bottom: 20px;
+}
+
+.container main .change-password form div label {
+    font-size: 16px;
+}
+/* ---------------- */
+
+.orders table td:not(:first-child),
+.orders table th:not(:first-child) {
+    text-align: center;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--font-active);
+    border-radius: 6px;
+    padding: 0;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-inline: 2px solid var(--font-color);
+    outline: none;
+}
+
+.quantity button {
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    padding-inline: 8px;
+}
+
+.delete-product {
+    font-size: 20px;
+    padding: 10px 12px;
+    color: #6c6b6b;
+    background-color: #dfdfdfd1;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.delete-product:hover {
+    color: rgba(255, 0, 0, 0.88);
+    background-color: #fff;
+}
+
+.checkout {
+    width: 300px;
+}
+
+.checkout > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+}
+
+.checkout > div:not(:last-child) {
+    border-bottom: 2px solid var(--button-color);
+}
+
+.checkout > div p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#coupon div {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--font-color);
+}
+
+#coupon input {
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 16px;
+    width: 150px;
+    padding-inline: 4px;
+}
+
+#coupon button {
+    border-left: 2px solid var(--font-color);
+    height: 100%;
+    padding: 3px;
+    font-weight: 500;
+    background: var(--font-color);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#coupon button:hover {
+    background: var(--font-active);
+}
+
+#checkoutBtn {
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: auto;
+    transition: background-color 0.3s ease;
+}
+
+#checkoutBtn:hover {
+    background: var(--active-color);
+}
